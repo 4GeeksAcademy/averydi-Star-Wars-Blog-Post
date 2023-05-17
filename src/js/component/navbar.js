@@ -8,14 +8,13 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3 sticky-top">
 			<Link to="/">
-			<div className="logo badge my-0 py-3">
-				<div className="title tc-yellow-400">Star Wars!</div>
-				<div className="subtitle">A fancy Guide x.x</div>
+			<div className="logo">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/100px-Star_Wars_Logo.svg.png"></img>
 			</div>
 			</Link>
 			<div className="dropstart btn-group ml-auto pe-5">
 				<button type="button" className="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-					<strong>Favorites UwU</strong>
+					<strong>Favorites</strong>
 				</button>
 				<ul className="dropdown-menu">
 					{store.favorites.map((favorite, index)=>{

@@ -29,7 +29,7 @@ export const CharacterCard = ({widget}) =>{
                             <Link to={`${widget}/${item.uid}`}>
                             <button 
                             className="btn btn-outline-info mx-4" 
-                            >Nerd Mode</button>
+                            >Read More</button>
                             </Link>
                             
                             <button 
