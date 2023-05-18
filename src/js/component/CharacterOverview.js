@@ -21,7 +21,7 @@ export const CharacterOverview = () =>{
 
   return (
     <div className="container text-center">
-        <h1 className="mx-auto">Characters!</h1>
+        <h1 className="mx-auto">Characters</h1>
         <div className="row row-cols-4">
             {store[widget]?.map(item=>(
             <div key={item.uid} className="wholecard col  my-3 rounded">
@@ -32,31 +32,23 @@ export const CharacterOverview = () =>{
                 <div className="cardFooter card-body ms-auto px-auto">
                     <Link to={`${item.uid}`}>
                         <button className="btn btn-outline-info mx-4">
-                            Nerd Mode
+                            Read More
                         </button>
                     </Link>
-                    
                     <button 
                     className={`btn btn-${verifyFavorite(item.uid)?"warning":"outline-warning"}`} 
                     onClick={()=>actions.FavoriteChecked(`${widget}/${item.uid}`, item.name)}
                     >♡</button>
-                </div>
-                
+                </div>   
             </div>    
-    ))|| <h1>loading...</h1>}
+    ))|| <h1>Patience you must have, my young Padawan.</h1>}
         </div>
         <nav aria-label="Page navigation example">
             <ul className="pagination justify-content-center">
-                {/* <li className="page-item disabled">
-                <a className="page-link">Previous</a>
-                </li> */}
                 <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 1, 21)} className="page-link" href="#">1</a></li>
                 <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 2, 21)} className="page-link" href="#">2</a></li>
                 <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 3, 21)} className="page-link" href="#">3</a></li>
                 <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 4, 21)} className="page-link" href="#">4</a></li>
-                {/* <li className="page-item">
-                <a className="page-link" href="#">Next</a>
-                </li> */}
             </ul>
         </nav>
     </div>

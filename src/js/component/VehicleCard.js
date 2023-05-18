@@ -1,25 +1,17 @@
 import React, { Component, useContext } from "react";
 import { Context } from "../store/appContext.js";
 import { Link } from "react-router-dom";
-// import PropTypes from "prop-types";
 
 export const VehicleCard = ({widget}) =>{
     const {store, actions}= useContext(Context);
-    // const {people, planets, vehicles, films} = store
     function verifyFavorite(){
-        // store=getstore()
-        // [...favorites]=store.favorites
-        // return [...favorites].some(item=>item.id==`${widget}/${item.uid}`)
         
         return store.favorites.some(item=>item.id==`${widget}/${item.uid}`)
-        // store undefined error
     }
 
     function imgError(e){
         e.target.src="https://starwars-visualguide.com/assets/img/placeholder.jpg"
     }
-    
-    
     
     return( 
         <div className=" cardDivVehicle d-flex">
@@ -33,7 +25,7 @@ export const VehicleCard = ({widget}) =>{
                             <Link to={`${widget}/${item.uid}`}>
                             <button 
                             className="btn btn-outline-info mx-4" 
-                            >Nerd Mode</button>
+                            >Read More</button>
                             </Link>
                             
                             <button 
@@ -42,7 +34,7 @@ export const VehicleCard = ({widget}) =>{
                             >♡</button>
                         </div>
                     </div>
-            ))|| <h1>loading...</h1>}
+            ))|| <h1>Patience you must have, my young Padawan.</h1>}
                 
         </div>
         )};

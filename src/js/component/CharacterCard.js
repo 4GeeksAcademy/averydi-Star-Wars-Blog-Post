@@ -3,19 +3,14 @@ import { Context } from "../store/appContext.js";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-// import PropTypes from "prop-types";
-
 export const CharacterCard = ({widget}) =>{
     const {store, actions}= useContext(Context);
-    // const {people, planets, vehicles, films} = store
     function verifyFavorite(itemId){
         return store.favorites.some(item=>item.id==`${widget}/${itemId}`)
     }
     function imgError(e){
         e.target.src="https://starwars-visualguide.com/assets/img/placeholder.jpg"
     }
-    
-    
     
     return( 
         <div className="d-flex">
@@ -38,17 +33,8 @@ export const CharacterCard = ({widget}) =>{
                             >♡</button>
                         </div>
                     </div>
-            ))|| <h1>loading...</h1>}
+            ))|| <h1>Patience you must have, my young Padawan.</h1>}
                 
         </div>
         )};
 export default CharacterCard;
-
-// CharacterCard.protoTypes = {
-//     name: PropTypes.string,
-//     uid: PropTypes.string,/
-//     url: PropTypes.string
-// }
-
-// (store.people)?.map(widget => ( 
-//  {store.people.map = (people) => (
