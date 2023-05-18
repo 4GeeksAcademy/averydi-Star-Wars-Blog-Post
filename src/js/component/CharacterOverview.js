@@ -43,14 +43,6 @@ export const CharacterOverview = () =>{
             </div>    
     ))|| <h1>Patience you must have, my young Padawan.</h1>}
         </div>
-        <nav aria-label="Page navigation example">
-            <ul className="pagination justify-content-center">
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 1, 21)} className="page-link" href="#">1</a></li>
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 2, 21)} className="page-link" href="#">2</a></li>
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 3, 21)} className="page-link" href="#">3</a></li>
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("people", 4, 21)} className="page-link" href="#">4</a></li>
-            </ul>
-        </nav>
     </div>
     )};
 

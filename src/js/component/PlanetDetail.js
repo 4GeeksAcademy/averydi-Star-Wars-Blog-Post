@@ -53,11 +53,11 @@ function verifyFavorite(itemId){
             <li className="list-group-item rounded my-1"><strong>Type of terrain</strong><br/>{data.terrain}</li>
           </ul>
           <div className="d-grid gap-2">
-                <Link className="btn btn-outline-info mt-4 mb-0" to="/">
-                  <button className="btn btn-outline-danger my-2" type="button">Return</button>
+                <Link className="btn btn-outline-warning mt-4 mb-0" to="/">
+                  <button className="btn btn-outline-light my-2" type="button">Return</button>
                 </Link>
                 <button 
-                  className={`btn mt-0 mb-4 btn-${verifyFavorite(data.id)?"warning":"outline-warning"}`} 
+                  className={`btn mt-0 mb-4 btn-${verifyFavorite(data.id)?"warning":"outline-success"}`} 
                   onClick={()=>actions.FavoriteChecked(`${widget}/${data.url?.slice(-2)}`, data.name)}
                 >♡</button>
             </div>

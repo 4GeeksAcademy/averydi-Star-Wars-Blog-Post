@@ -2,13 +2,13 @@
     General Styles
 */
 .logo{
-    font-family: "Silkscreen", sans-serif;
-    background: linear-gradient(1.25turn ,#3851b9, #32119c);
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 .footer{
-    font-family: "Lobster", sans-serif;
+    font-family: 'Franklin Gothic Medium', sans-serif;
     height: 90px;
-    color: rgb(0, 0, 0);
+    color: yellow;
+    background-color: #000000;
 }
 body{
     background: url('https://external-preview.redd.it/YNYFXXUd6uo9LHCaEKMebpEVh87q9LB5SC5PVub5RgQ.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=ba6aaba989b3c706861440526a627b45e8e683ab') no-repeat center/cover;

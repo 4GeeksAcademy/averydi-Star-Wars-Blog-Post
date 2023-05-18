@@ -57,11 +57,11 @@ export const CharacterDetail = () =>{
                 <img className="mx-auto px-auto img-fluid rounded mb-3" src={"https://starwars-visualguide.com/assets/img/planets/"+data.homeworld?.slice(-2)+".jpg"} onError={imgError}></img>
             </div>
             <div className="d-grid gap-2">
-                <Link className="btn btn-outline-info mt-4 mb-0" to="/">
-                  <button className="btn btn-outline-danger my-2" type="button">Return</button>
+                <Link className="btn btn-outline-warning mt-4 mb-0" to="/">
+                  <button className="btn btn-outline-light my-2" type="button">Return</button>
                 </Link>
                 <button 
-                  className={`btn mt-0 mb-4 btn-${verifyFavorite(data.id)?"warning":"outline-warning"}`} 
+                  className={`btn mt-0 mb-4 btn-${verifyFavorite(data.id)?"warning":"outline-success"}`} 
                   onClick={()=>actions.FavoriteChecked(`${widget}/${data.id}`, data.name)}
                 >♡</button>
             </div>

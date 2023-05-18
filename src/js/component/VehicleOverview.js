@@ -31,7 +31,7 @@ export const VehicleOverview = () =>{
                 <div className="cardFooter card-body ms-auto px-auto">
                     <Link to={`${item.uid}`}>
                         <button className="btn btn-outline-info mx-4">
-                            Nerd Mode
+                            Read More
                         </button>
                     </Link>
                     
@@ -43,12 +43,6 @@ export const VehicleOverview = () =>{
             </div>    
     ))|| <h1>Patience you must have, my young Padawan.</h1>}
         </div>
-        <nav aria-label="Page navigation example">
-            <ul className="pagination justify-content-center">
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("vehicles", 1, 21)} className="page-link" href="#">1</a></li>
-                <li className="page-item"><a onClick={()=>actions.fetchStarWars("vehicles", 2, 21)} className="page-link" href="#">2</a></li>
-            </ul>
-        </nav>
     </div>
     )};
 
