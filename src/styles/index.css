@@ -26,18 +26,18 @@ body{
     min-width: 300px;
 }
 .list-group-item{
-    background: linear-gradient(217deg, rgba(100, 154, 201, 0.8), rgba(255,0,0,0)),            
-                linear-gradient(127deg, rgba(226, 223, 252, 0.8), rgba(0,255,0,0))
+    background: linear-gradient(217deg, rgba(223, 235, 8, 0.8), rgba(255,0,0,0)),            
+                linear-gradient(127deg, rgba(218, 117, 9, 0.8), rgba(0,255,0,0))
 }
 li{
-    font-family: "Silkscreen", sans-serif;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 #card-general{
     overflow-y: hidden;
     overflow-x: auto;
 }
 .description{
-    font-family: "Lobster", sans-serif;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 .cardTitle{
     max-height: 5rem;

@@ -1,10 +1,11 @@
 h1{
-    font-family: "Silkscreen", sans-serif;
+    font-family: 'Franklin Gothic Medium', sans-serif;
     color: rgb(0, 0, 0);
     margin-left: 70px;
     margin-top: 70px;
     margin-bottom: 40px;
+    
 }
 strong{
-    color:rgb(0, 0, 0)
+    color:rgb(145, 19, 19)
 }

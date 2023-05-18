@@ -23,7 +23,7 @@ export const CharacterDetail = () =>{
 	}, [])
 
   function imgError(e){
-    e.target.src="https://starwars-visualguide.com/assets/img/placeholder.jpg"
+    e.target.src="https://i.kym-cdn.com/photos/images/newsfeed/001/005/948/4e6.png"
 }
 
   return (
@@ -57,7 +57,7 @@ export const CharacterDetail = () =>{
             </div>
             <div className="d-grid gap-2">
                 <Link className="btn btn-outline-info mt-4 mb-0" to="/">
-                  <button className="btn btn-outline-danger my-2" type="button">Noob Mode</button>
+                  <button className="btn btn-outline-danger my-2" type="button">Return</button>
                 </Link>
                 <button 
                   className={`btn mt-0 mb-4 btn-${verifyFavorite(data.id)?"warning":"outline-warning"}`} 
